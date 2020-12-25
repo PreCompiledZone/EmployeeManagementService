@@ -38,7 +38,7 @@ public class Employee {
 	@NotEmpty(message = "Employee desigmation cannot be empty")
 	@NotBlank(message = "Employee designation cannot be blank")
 	@Pattern(regexp = "[^0-9!@#$^%&*()<>,;{}|.~?]*", message = "designation contains invalid characters")
-	@EmployeeDesignationConstraint
+	//	@EmployeeDesignationConstraint //custome annotation to validate designation
 	private String employeeDesignation;
 
 	@NotEmpty(message = "Employee email id cannot be empty")
